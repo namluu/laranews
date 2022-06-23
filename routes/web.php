@@ -14,11 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('welcome');
 });
-
-Route::get('/info', function () {
-    phpinfo();
-});
-
-require __DIR__.'/auth.php';
