@@ -21,4 +21,13 @@ RUN docker-php-ext-install pdo_mysql \
 COPY .docker/php/opcache.ini /usr/local/etc/php/conf.d/opcache.ini
 COPY .docker/php/xdebug-dev.ini /usr/local/etc/php/conf.d/xdebug-dev.ini
 
-RUN chown -R www-data:www-data /var/www/html
+ARG USER_ID=1000
+ARG GROUP_ID=1000
+
+RUN userdel -f www-data &&\
+    if getent group www-data ; then groupdel www-data; fi &&\
+    groupadd -g ${GROUP_ID} www-data &&\
+    useradd -l -u ${USER_ID} -g www-data www-data
+        
+USER www-data
+
