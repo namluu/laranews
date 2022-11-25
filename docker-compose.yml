@@ -5,7 +5,7 @@ services:
     ports:
       - "8080:80"
     volumes:
-      - .:/var/www/html
+      - "app:/var/www/html"
     env_file: .docker.env
   mariadb:
     image: mariadb:10.8.3
@@ -14,3 +14,8 @@ services:
     environment:
       - MYSQL_DATABASE=dockerphp
       - MYSQL_ROOT_PASSWORD=password
+    volumes:
+      - "db:/var/lib/mysql:rw"
+volumes:
+  app: {}
+  db: {}
