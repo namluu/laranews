@@ -61,6 +61,50 @@
             @yield('content')
         </div>
 
+        @section('footer')
+        <footer>
+            <div class="container">
+                <div class="inner-footer">
+                    <a href="">Trang chủ</a>
+                    <a href="">Video</a>
+                    <a href="">Ảnh</a>
+                    <a href="">Mới nhất</a>
+                    <a href="">Trang chủ</a>
+                    <a href="">Video</a>
+                    <a href="">Video</a>
+                    <a href="">Ảnh</a>
+                    <a href="">Mới nhất</a>
+                    <a href="">Trang chủ</a>
+                    <a href="">Video</a>
+                    <a href="">Video</a>
+                    <a href="">Ảnh</a>
+                    <a href="">Mới nhất</a>
+                    <a href="">Trang chủ</a>
+                    <a href="">Video</a>
+                    <a href="">Video</a>
+                    <a href="">Ảnh</a>
+                    <a href="">Mới nhất</a>
+                    <a href="">Trang chủ</a>
+                    <a href="">Video</a>
+                    <a href="">Video</a>
+                    <a href="">Ảnh</a>
+                    <a href="">Mới nhất</a>
+                    <a href="">Trang chủ</a>
+                    <a href="">Video</a>
+                </div>
+                <div class="social">
+                    <a href=""><img src="images/logo.svg" alt="VnExpress - Bao tieng Viet nhieu nguoi xem nhat"></a>
+
+                </div>
+                <div class="copyright">
+                    <p><strong>Báo tiếng Việt nhiều người xem nhất</strong><br>Thuộc Bộ Khoa học Công nghệ<br>Số giấy phép: 06/GP-BTTTT ngày 03/01/2014</p>
+                    <p>Tổng biên tập: Phạm Hiếu<br>Địa chỉ: Tầng 5, Tòa nhà FPT, 17 phố Duy Tân, Cầu Giấy, Hà Nội<br>Điện thoại: 024 7300 8899 - máy lẻ 4500</p>
+                    <p style="text-align: right;">© 1997-2021. Toàn bộ bản quyền thuộc VnExpress</p>
+                </div>
+            </div>
+        </footer>
+        @show
+
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
         <script type="text/javascript" src="{{asset('js/ddsmoothmenu.js')}}"></script>
         <script type="text/javascript" src="{{asset('js/main.js')}}"></script>
