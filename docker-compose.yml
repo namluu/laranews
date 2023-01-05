@@ -5,7 +5,7 @@ services:
     ports:
       - "8080:80"
     volumes:
-      - "app:/var/www/html"
+      - ".:/var/www/html"
     env_file: .docker.env
   mariadb:
     image: mariadb:10.8.3
@@ -17,5 +17,4 @@ services:
     volumes:
       - "db:/var/lib/mysql:rw"
 volumes:
-  app: {}
   db: {}
