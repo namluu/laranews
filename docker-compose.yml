@@ -12,7 +12,7 @@ services:
     ports:
       - "13306:3306"
     environment:
-      - MYSQL_DATABASE=dockerphp
+      - MYSQL_DATABASE=laranews
       - MYSQL_ROOT_PASSWORD=password
     volumes:
       - "db:/var/lib/mysql:rw"
